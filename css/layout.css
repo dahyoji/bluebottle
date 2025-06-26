@@ -1,0 +1,44 @@
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.inner {
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+
+}
+
+.default .title {
+    max-width: 1410px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.default .title h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.default .title p {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.default_btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 80px;
+    height: 40px;
+    background: #fff;
+    color: #333;
+
+    border: 1px solid #333;
+    white-space: nowrap;
+
+}
