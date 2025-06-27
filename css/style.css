@@ -62,40 +62,9 @@
 }
 
 @media (max-width:768px) {
-    #header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        background: #fdfbf7;
-    }
-
-    #header .hd_top {
-        border-bottom: 1px solid #ddd;
-        background: #fff;
-    }
-
-    #header .hd_top .inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 32px;
-    }
-
-    #header .hd_top .inner strong {
-        font-size: 13px;
-        opacity: 0.75;
-    }
-
-    #header .hd_bottom {}
 
     #header .hd_bottom .inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        line-height: 80px;
+
         /*  */
 
         margin: 0 16px;
@@ -113,6 +82,7 @@
         height: 200vh;
         background: #fdfbf7;
         border-right: 1px solid #ddd;
+
     }
 
     #header .hd_bottom .gnb.on {
@@ -121,8 +91,7 @@
 
 
     #header .hd_bottom .gnb>ul {
-        display: flex;
-        gap: 40px;
+
         /*  */
         flex-direction: column;
         gap: 0;
@@ -130,26 +99,27 @@
 
     }
 
-    .header .hd_bottom .gnb>ul>li>a {
-        display: block;
-        line-height: 80px;
+    #header .hd_bottom .gnb>ul>li>a {
+
         /*  */
+        white-space: nowrap;
         line-height: 40px;
         border-bottom: 1px solid #ddd;
     }
 
 
 
+
+
+
     #header .utils {
-        display: flex;
-        text-align: center;
-        gap: 16px;
+
         /*  */
         display: none;
     }
 
     #header .mbtn {
-        display: none;
+
         /*  */
         display: block;
 
@@ -260,6 +230,11 @@
 }
 
 @media (max-width:768px) {
+    .main_visual .main_visual_slide .itm {
+        height: calc(100vh - 112px);
+
+    }
+
     .main_visual .main_visual_slide .itm .slg {
         position: absolute;
         bottom: 20%;
@@ -274,17 +249,6 @@
     }
 
 
-    .main_visual .main_visual_slide .itm01 {
-        background: url(../images/PLP_PC__NOLA.webp) no-repeat center center/cover;
-    }
-
-    .main_visual .main_visual_slide .itm02 {
-        background: url(../images/main_visual02.webp) no-repeat center center/cover;
-    }
-
-    .main_visual .main_visual_slide .itm03 {
-        background: url(../images/main_visual03.webp) no-repeat center center/cover;
-    }
 
 
 
@@ -717,15 +681,14 @@
 }
 
 @media (max-width:768px) {
-    .main_tab {}
-
-    .main_tab .tab_menu {
-        display: flex;
-        margin-bottom: 40px;
+    .main_tab .tab_menu button {
+        position: relative;
+        height: 40px;
+        padding: 0 16px;
+        border-bottom: 1px solid #ddd;
         /*  */
-
+        color: #666;
     }
-
 
     .main_tab .tab_content .con {
         display: flex;
