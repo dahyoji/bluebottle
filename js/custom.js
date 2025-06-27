@@ -10,9 +10,17 @@ $(function () {
     });
     const main_product_slide = new Swiper('.main_product_slide', {
         loop: true,
-        slidesPerView: 3,
-        spaceBetween: 5,
+        slidesPerView: 1,
+        spaceBetween: 40,
         centeredSlides: true,
+        breakpoints: {
+
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+
+        },
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -25,12 +33,15 @@ $(function () {
             nextEl: '.main_product .next',
             prevEl: '.main_product .prev',
         },
+
     });
 
     const MIS = new Swiper('.main_cafe_slide', {
         loop: true,
-        effect: 'fade',
-
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: '.main_cafe .next',
             prevEl: '.main_cafe .prev',
@@ -39,6 +50,8 @@ $(function () {
 
 
 });
+
+
 
 $(function () {
     $('.main_tab .tab_menu button').on('click', function () {
@@ -72,4 +85,12 @@ $(function () {
         }
     });
 
+})
+
+$(function () {
+    $('.mbtn').on('click', function () {
+        $(this).toggleClass('is-active')
+        $('.gnb').toggleClass('on');
+        $('#header h1').toggleClass('on')
+    })
 })

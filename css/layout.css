@@ -8,6 +8,10 @@ img {
     margin: 0 auto;
 }
 
+
+
+
+
 .default {
     padding: 120px 0;
 
@@ -40,5 +44,25 @@ img {
 
     border: 1px solid #333;
     white-space: nowrap;
+
+}
+
+@media (max-width:768px) {
+    .inner {
+        max-width: 1410px;
+        margin: 0 auto;
+        /*  */
+        max-width: 1410px;
+        margin: 0 16px;
+    }
+
+    .default .title {
+        max-width: 1410px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        /*  */
+        margin: 0 16px;
+        margin-bottom: 24px;
+    }
 
 }
